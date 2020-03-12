@@ -34,18 +34,28 @@
 @keyframes colorChange {
   0% {
     background-color: white;
+    left: 0px;
+    top: 0px;
   }
   25% {
     background-color: rgb(206, 19, 19);
+    left: 300px;
+    top: 0px;
   }
   50% {
     background-color: rgb(49, 22, 150);
+    left: 300px;
+    top: 300px;
   }
   75% {
     background-color: rgb(223, 130, 23);
+    left: 0px;
+    top: 300px;
   }
   100% {
     background-color: rgb(126, 39, 51);
+    left: 0px;
+    top: 0px;
   }
 }
 /* .box1:hover {
