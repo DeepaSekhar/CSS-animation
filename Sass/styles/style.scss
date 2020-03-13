@@ -3,5 +3,5 @@ copty the single code to paste to get the same style everywhere(reusability).*/
 @import "./variables";
 @import "./header";
 .contact {
-  @include flexcenter();
+  @include flexcenter(row);
 }

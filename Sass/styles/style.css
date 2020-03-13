@@ -11,6 +11,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #c06969;
   color: #f3ecec;
 }
@@ -34,5 +38,9 @@ header button:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=style.css.map */
