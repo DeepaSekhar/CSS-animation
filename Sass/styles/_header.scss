@@ -1,11 +1,15 @@
 // make sure you import this file to main file
-
-header {
-  background: rgb(192, 105, 105);
-  height: 100vh;
+// seperate the code using mixin
+@mixin flexcenter {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  //   import this using @include whereever you want
+}
+header {
+  @include flexcenter();
+  background: rgb(192, 105, 105);
   color: $text-color;
   // nesting
   button {
@@ -13,43 +17,6 @@ header {
 
     &:hover {
       background: yellow;
-    }
-    header {
-      background: rgb(192, 105, 105);
-      display: flex;
-      justify-content: center;
-      color: $text-color;
-      // nesting
-      button {
-        background: $primaryBtn;
-
-        &:hover {
-          background: yellow;
-        }
-        &::after {
-          content: "hellooo";
-        }
-      }
-    }
-    &::after {
-      header {
-        background: rgb(192, 105, 105);
-        display: flex;
-        justify-content: center;
-        color: $text-color;
-        // nesting
-        button {
-          background: $primaryBtn;
-
-          &:hover {
-            background: yellow;
-          }
-          &::after {
-            content: "hellooo";
-          }
-        }
-      }
-      content: "hellooo";
     }
   }
 }
