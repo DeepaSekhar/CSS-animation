@@ -29,7 +29,16 @@
   height: 100%;
   animation-name: colorChange;
   animation-duration: 4s;
-  animation-iteration-count: 2;
+  /* how many times the animation works...upto (infinite) */
+  animation-iteration-count: 3;
+  /* animation finally stays on the last shape (forward backward)*/
+  animation-fill-mode: forwards;
+  /* delay the animation */
+  animation-delay: 2s;
+  /* direction of the animation reverse and alternate-alternate will go clock-wise first 
+  and then anti clockwise with the count
+    */
+  animation-direction: alternate;
 }
 
 @keyframes colorChange {
