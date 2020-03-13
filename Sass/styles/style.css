@@ -1,13 +1,17 @@
 /* create variable rather than adding same style in defferent place variable helps to 
 copty the single code to paste to get the same style everywhere(reusability).*/
 header {
-  background: #c06969;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background: #c06969;
   color: #f3ecec;
 }
 
@@ -19,11 +23,16 @@ header button:hover {
   background: yellow;
 }
 
-header button::after {
-  content: "hellooo";
-}
-
-.contact button {
-  background: #8b1263;
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

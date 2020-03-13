@@ -1,28 +1,7 @@
 /* create variable rather than adding same style in defferent place variable helps to 
 copty the single code to paste to get the same style everywhere(reusability).*/
-$primaryBtn: rgb(139, 18, 99);
-$text-color: rgb(243, 236, 236);
-
-header {
-  background: rgb(192, 105, 105);
-  display: flex;
-  justify-content: center;
-  color: $text-color;
-  // nesting
-  button {
-    background: $primaryBtn;
-
-    &:hover {
-      background: yellow;
-    }
-    &::after {
-      content: "hellooo";
-    }
-  }
-}
-// header button {
-//   background: $primaryBtn;
-// }
-.contact button {
-  background: $primaryBtn;
+@import "./variables";
+@import "./header";
+.contact {
+  @include flexcenter();
 }
