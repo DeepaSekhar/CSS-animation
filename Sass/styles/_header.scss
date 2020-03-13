@@ -1,0 +1,55 @@
+// make sure you import this file to main file
+
+header {
+  background: rgb(192, 105, 105);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+  // nesting
+  button {
+    background: $primaryBtn;
+
+    &:hover {
+      background: yellow;
+    }
+    header {
+      background: rgb(192, 105, 105);
+      display: flex;
+      justify-content: center;
+      color: $text-color;
+      // nesting
+      button {
+        background: $primaryBtn;
+
+        &:hover {
+          background: yellow;
+        }
+        &::after {
+          content: "hellooo";
+        }
+      }
+    }
+    &::after {
+      header {
+        background: rgb(192, 105, 105);
+        display: flex;
+        justify-content: center;
+        color: $text-color;
+        // nesting
+        button {
+          background: $primaryBtn;
+
+          &:hover {
+            background: yellow;
+          }
+          &::after {
+            content: "hellooo";
+          }
+        }
+      }
+      content: "hellooo";
+    }
+  }
+}
