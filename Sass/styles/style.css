@@ -15,7 +15,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #c06969;
+  background: #1d6a77;
   color: #f3ecec;
 }
 
@@ -42,5 +42,6 @@ header button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  background: #c06969;
 }
 /*# sourceMappingURL=style.css.map */

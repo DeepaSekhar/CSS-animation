@@ -1,16 +1,17 @@
 // make sure you import this file to main file
 // seperate the code using mixin
-@mixin flexcenter($direction) {
+@mixin flexcenter($direction, $background) {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   flex-direction: $direction;
+  background: $background;
   //   import this using @include whereever you want
 }
 header {
-  @include flexcenter(column);
-  background: rgb(192, 105, 105);
+  @include flexcenter(column, rgb(29, 106, 119));
+
   color: $text-color;
   // nesting
   button {
