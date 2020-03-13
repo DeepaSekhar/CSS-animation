@@ -1,0 +1,21 @@
+/* create variable rather than adding same style in defferent place variable helps to 
+copty the single code to paste to get the same style everywhere(reusability).*/
+header {
+  background: #c06969;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f3ecec;
+}
+
+header button {
+  background: #8b1263;
+}
+
+.contact button {
+  background: #8b1263;
+}
+/*# sourceMappingURL=style.css.map */
