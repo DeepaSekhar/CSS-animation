@@ -22,19 +22,23 @@
 }*/
 
 .box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   position: absolute;
-  top: 80%;
+  /* top: 80%; */
   background: rgb(241, 86, 13);
   width: 100%;
   height: 100%;
   animation-name: colorChange;
   animation-duration: 4s;
   /* how many times the animation works...upto (infinite) */
-  animation-iteration-count: 3;
+  animation-iteration-count: 4;
   /* animation finally stays on the last shape (forward backward)*/
   animation-fill-mode: forwards;
   /* delay the animation */
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
   /* direction of the animation reverse and alternate-alternate will go clock-wise first 
   and then anti clockwise with the count
     */
@@ -43,9 +47,9 @@
 
 @keyframes colorChange {
   0% {
-    background-color: white;
-    left: 0px;
-    top: 0px;
+    background-color: rgb(241, 86, 13);
+    left: 0;
+    top: 0;
     border-radius: 0 0 0 0;
   }
   25% {
@@ -70,7 +74,7 @@
     background-color: rgb(126, 39, 51);
     left: 0px;
     top: 0px;
-    border-radius: 50% 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
   }
 }
 /* .box1:hover {

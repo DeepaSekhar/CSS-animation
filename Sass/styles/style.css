@@ -24,7 +24,7 @@ header button, .contact button {
 }
 
 header button:hover, .contact button:hover {
-  background: yellow;
+  background: blue;
 }
 
 .contact {
